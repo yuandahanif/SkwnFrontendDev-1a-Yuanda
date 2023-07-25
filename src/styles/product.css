@@ -92,6 +92,7 @@
 .product__list {
   background: var(--dark-primary);
   padding: 2em 1em 4em;
+  position: relative;
 }
 
 .product__list__header {
@@ -195,9 +196,11 @@
 
 .product__list__coursel__control {
   display: flex;
-  justify-content: flex-end;
-  margin: 1em 7em;
-  gap: 1em;
+  justify-content: space-between;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  width: 95%;
 }
 
 .product__list__coursel__control button {
@@ -262,5 +265,12 @@
 
   .product__list__header span:nth-child(2) {
     font-size: 2em;
+  }
+
+  .product__list__coursel__control {
+    justify-content: flex-end;
+    margin: 1em -5em;
+    position: static;
+    gap: 1em;
   }
 }

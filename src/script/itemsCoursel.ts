@@ -7,8 +7,6 @@ const scrollIfCourselOverflow = () => {
   const activeCardWidth = activeCard.width() ?? 0;
   const activeCardLeft = activeCardPosition?.left;
   const activeCardRight = activeCardLeft + activeCardWidth;
-  console.log('file: itemsCoursel.ts:9 ~ scrollIfCourselOverflow ~ activeCardLeft:', activeCardLeft)
-  console.log('file: itemsCoursel.ts:10 ~ scrollIfCourselOverflow ~ activeCardRight:', activeCardRight)
 
   if (activeCardLeft < 0) {
     const coursel = $(".product__list__coursel");

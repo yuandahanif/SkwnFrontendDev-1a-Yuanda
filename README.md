@@ -19,8 +19,10 @@
      pnpm dev
      ```
 
-   Consideration on why project is structured this way:
+API used: [Platzi Fake Store API](https://fakeapi.platzi.com/)
 
-   - Why split the CSS, I usualy working with Tailwind CSS and React so spliting code feel natural for me as much as I can.
+Consideration on why project is structured this way:
 
-   - Why add Typescript, For small scale project is'nt realy neccesery, but for long run project it can be game changing, so why not.
+- Why split the CSS and the script, I usualy working with Tailwind CSS and React so spliting code feel natural for me.
+
+- Why add Typescript, For small scale project is'nt realy neccesery, but for long run project it can be game changing, so why not.
