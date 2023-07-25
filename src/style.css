@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @import url("./styles//header.css");
+@import url("./styles//landing.css");
 
 :root {
   --lime-primary: #e5f0b6;
   --dark-primary: #2f241f;
   --white-primary: #ffffff;
+  --brown-primary: #817253;
 }
 
 * {
@@ -24,4 +26,9 @@ button {
   background: transparent;
   outline: none;
   border: none;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
 }

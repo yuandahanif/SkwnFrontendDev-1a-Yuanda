@@ -1,0 +1,99 @@
+.landing {
+  display: flex;
+  height: 100vh;
+  max-height: 709px;
+  width: 100%;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.landing__title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing__title h1 {
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.045rem;
+  display: inline-block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.landing__title h1 span {
+  color: var(--brown-primary);
+}
+
+.landing__action__container {
+  margin-top: 2rem;
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing__action__container button {
+  padding: 1rem 2rem;
+  background: var(--lime-primary);
+  color: var(--dark-primary);
+  border-radius: 0.4em;
+  font-weight: 700;
+  display: flex;
+  column-gap: 0.8em;
+  align-items: center;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.landing__action__container button.landing__video {
+  background: var(--white-primary);
+  border: 1px solid var(--dark-primary);
+}
+
+.landing__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 75%;
+  height: 100%;
+  padding: 2em;
+  padding-bottom: 7em;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url("/public/hero.png");
+}
+
+.landing__image__price {
+  display: inline-flex;
+  padding: 0.5em;
+  width: fit-content;
+  font-size: 1.3em;
+  border-radius: 0.5em;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.landing__image__name {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--white-primary);
+}
+
+.landing__image__view {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border-radius: 0.8em;
+  background: var(--dark-primary);
+  color: var(--white-primary);
+  width: fit-content;
+}
