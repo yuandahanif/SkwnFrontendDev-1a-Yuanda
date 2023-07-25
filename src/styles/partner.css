@@ -1,0 +1,29 @@
+.partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em;
+  gap: 5em;
+  background-color: #FCFAFA;
+}
+
+.partner__total {
+  display: flex;
+  flex-direction: column;
+}
+
+.partner__total span:nth-child(1) {
+  font-size: 3.5em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.partner__logo {
+  display: flex;
+  gap: 2em;
+}
+
+.partner__logo div {
+}

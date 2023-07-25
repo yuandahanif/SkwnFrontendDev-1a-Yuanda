@@ -18,3 +18,9 @@
      ```sh
      pnpm dev
      ```
+
+   Consideration on why project is structured this way:
+
+   - Why split the CSS, I usualy working with Tailwind CSS and React so spliting code feel natural for me as much as I can.
+
+   - Why add Typescript, For small scale project is'nt realy neccesery, but for long run project it can be game changing, so why not.
