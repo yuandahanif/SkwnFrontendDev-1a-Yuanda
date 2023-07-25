@@ -1,0 +1,67 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  margin: 0 auto;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: var(--dark-primary);
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+.header_link_furniture {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__right {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.header__right button {
+  padding: 0.5rem 1rem;
+}
+
+.header__signup {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  background: var(--lime-primary);
+  color: var(--dark-primary);
+  border-radius: 0.4em;
+  font-weight: 700;
+  padding: 1.75rem 1.5rem;
+}
+
+.header__cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  color: var(--lime-primary);
+  background: var(--dark-primary);
+  border-radius: 0.4em;
+  padding: 0.75rem;
+}

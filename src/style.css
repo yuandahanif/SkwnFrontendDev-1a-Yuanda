@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("./styles//header.css");
+
+:root {
+  --lime-primary: #e5f0b6;
+  --dark-primary: #2f241f;
+  --white-primary: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white-primary);
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: var(--dark-primary);
+}
+
+button {
+  background: transparent;
+  outline: none;
+  border: none;
+}

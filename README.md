@@ -16,5 +16,5 @@
    - run locally using
 
      ```sh
-     npx dev
+     pnpm dev
      ```

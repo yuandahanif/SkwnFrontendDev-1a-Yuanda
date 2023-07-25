@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "watch": "tsc -w",
-    "serve": "serve -s src",
+    "serve": "serve",
     "dev": "concurrently \"pnpm run watch\" \"pnpm run serve\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
