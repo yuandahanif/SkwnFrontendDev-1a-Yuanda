@@ -1,18 +1,20 @@
 .product {
   display: flex;
+  flex-direction: column-reverse;
   padding: 3em 0;
   justify-content: flex-start;
-  padding-right: 5em;
+  padding-right: 0em;
 }
 
 .product__coursel {
   display: flex;
+  width: 100%;
+  justify-content: center;
   gap: 1rem;
-  width: 90%;
 }
 
 .product__coursel__item {
-  width: 15%;
+  width: 30%;
   border-radius: 1em;
   overflow: hidden;
 }
@@ -25,25 +27,27 @@
 }
 
 .product__coursel__item--active {
-  width: 60%;
+  width: 30%;
 }
 
 /* ================== */
 
 .product__detail {
-  width: 50%;
-  /* width: fit-content; */
+  width: 100%;
+  padding: 2em 1em;
+  text-align: center;
 }
 
 .product__detail__category {
-  display: inline-flex;
+  display: inline-block;
   width: 100%;
-  margin-bottom: 1em;
   font-size: 1.2em;
+  text-align: center;
+  margin: 0 auto 1em;
 }
 
 .product__detail__title {
-  font-size: 48px;
+  font-size: 1.5em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -57,10 +61,12 @@
 .product__detail__recommendation__item {
   padding: 1em;
   background: #fcfafa;
+  text-align: left;
 }
 
 .product__detail__recommendation__item--active {
   background: var(--lime-primary);
+  text-align: left;
 }
 
 .product__detail__recommendation__item__title {
@@ -87,7 +93,7 @@
 .product__list__header {
   display: flex;
   color: var(--lime-primary);
-  padding: 1em 8em;
+  padding: 1em 2em;
 }
 
 .product__list__header__left {
@@ -104,7 +110,7 @@
 }
 
 .product__list__header span:nth-child(2) {
-  font-size: 48px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -197,4 +203,58 @@
   padding: 1em;
   border-radius: 100%;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .product {
+    flex-direction: row;
+    padding-right: 5em;
+  }
+
+  .product__coursel {
+    width: 90%;
+  }
+
+  .product__coursel__item {
+    width: 15%;
+    border-radius: 1em;
+    overflow: hidden;
+  }
+
+  .product__coursel__item img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    max-height: 523px;
+  }
+
+  .product__coursel__item--active {
+    width: 60%;
+  }
+
+  /* ============== */
+  .product__detail {
+    width: 50%;
+    padding: 0;
+    text-align: left;
+  }
+
+  .product__detail__category {
+    text-align: left;
+  }
+
+  .product__detail__title {
+    font-size: 2em;
+    text-align: left;
+  }
+
+  /* =============================== */
+
+  .product__list__header {
+    padding: 1em 8em;
+  }
+
+  .product__list__header span:nth-child(2) {
+    font-size: 2em;
+  }
 }

@@ -1,6 +1,5 @@
 .contact {
-  padding: 2em 7em;
-
+  padding: 2em 4em;
   background: #fcfafa;
 }
 
@@ -10,8 +9,9 @@
 }
 
 .contact__offer {
-  font-size: 64px;
+  font-size: 2em;
   font-style: normal;
+  text-align: center;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.64px;
@@ -23,11 +23,11 @@
   margin-top: 2em;
   border-radius: 0.2em;
   overflow: hidden;
-  width: 50%;
+  width: 100%;
 }
 .contact__form label {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 .contact__form label input {
   display: inline-block;
@@ -58,4 +58,19 @@
   width: auto;
   padding: 1em;
   aspect-ratio: 1 1;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 2em 7em;
+  }
+
+  .contact__offer {
+    font-size: 3em;
+    text-align: left;
+  }
+
+  .contact__form {
+    width: 50%;
+  }
 }

@@ -1,5 +1,6 @@
 .landing {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   max-height: 709px;
   width: 100%;
@@ -14,10 +15,11 @@
   height: 100%;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2em;
 }
 
 .landing__title h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -25,6 +27,7 @@
   display: inline-block;
   width: fit-content;
   margin: 0 auto;
+  text-align: center;
 }
 
 .landing__title h1 span {
@@ -34,6 +37,7 @@
 .landing__action__container {
   margin-top: 2rem;
   display: flex;
+  flex-direction: column;
   width: 100%;
   gap: 2rem;
   align-items: center;
@@ -58,11 +62,12 @@
   border: 1px solid var(--dark-primary);
 }
 
+/* ========================= */
 .landing__image {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 75%;
+  width: 100%;
   height: 100%;
   padding: 2em;
   padding-bottom: 7em;
@@ -96,4 +101,33 @@
   background: var(--dark-primary);
   color: var(--white-primary);
   width: fit-content;
+}
+
+@media (min-width: 768px) {
+  .landing {
+    flex-direction: row;
+  }
+
+  .landing__title {
+    margin-bottom: 0;
+  }
+
+  .landing__title h1 {
+    text-align: left;
+    font-size: 3.5rem;
+
+    display: inline-block;
+    max-width: 500px;
+  }
+
+  /* ================= */
+  .landing__image {
+    width: 75%;
+  }
+}
+
+@media (min-width: 425px) {
+  .landing__action__container {
+    flex-direction: row;
+  }
 }

@@ -1,10 +1,11 @@
 .partner {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 4em;
   gap: 5em;
-  background-color: #FCFAFA;
+  background-color: #fcfafa;
 }
 
 .partner__total {
@@ -22,8 +23,34 @@
 
 .partner__logo {
   display: flex;
-  gap: 2em;
+  gap: 1em;
+  flex-wrap: wrap;
 }
 
 .partner__logo div {
+}
+
+.partner__logo div svg {
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 768px) {
+  .partner {
+    flex-direction: row;
+  }
+
+  .partner__logo {
+  }
+
+  .partner__logo div svg {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (min-width: 425px) {
+  .partner__logo {
+    flex-wrap: wrap;
+  }
 }

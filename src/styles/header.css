@@ -13,6 +13,7 @@ header {
 
 header nav {
   margin: 0 auto;
+  display: none;
 }
 
 header nav ul {
@@ -30,13 +31,13 @@ header nav ul a {
 }
 
 .header_link_furniture {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__right {
-  display: flex;
+  display: none;
   column-gap: 1rem;
   align-items: center;
 }
@@ -66,4 +67,14 @@ header nav ul a {
   background: var(--dark-primary);
   border-radius: 0.4em;
   padding: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  header nav {
+    display: flex;
+  }
+
+  .header__right {
+    display: flex;
+  }
 }
