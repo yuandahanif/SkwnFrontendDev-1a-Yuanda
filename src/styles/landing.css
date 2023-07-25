@@ -60,6 +60,10 @@
 .landing__action__container button.landing__video {
   background: var(--white-primary);
   border: 1px solid var(--dark-primary);
+  transition: 500ms;
+}
+.landing__action__container button.landing__video:hover {
+  background: var(--lime-primary);
 }
 
 /* ========================= */
@@ -90,6 +94,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 0.5em;
   color: var(--white-primary);
 }
 
@@ -101,6 +106,7 @@
   background: var(--dark-primary);
   color: var(--white-primary);
   width: fit-content;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

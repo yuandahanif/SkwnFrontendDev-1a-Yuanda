@@ -1,5 +1,15 @@
 /// <reference types="jquery" />
 
+import {
+  renderRecomendedFurnitureItem,
+  renderCourselFurnitureItem,
+} from "./script/render.js";
+
+$(window).on("load", (e) => {
+  renderRecomendedFurnitureItem();
+  renderCourselFurnitureItem();
+});
+
 // ! toggle mobile navigation menu
 $("#mobile_nav_button").on("click", (e) => {
   $("#main_nav").toggleClass("nav-active");
@@ -13,7 +23,6 @@ $("#main_nav > ul > li a").on("click", (e) => {
 let itter = 0;
 $(window).on("scroll", (e) => {
   const scroll = $(window)?.scrollTop();
-  console.log("file: index.ts:16 ~ $ ~ scroll:", scroll);
 
   if (scroll && scroll > 100) {
     $("header").addClass("shadow");
@@ -31,10 +40,4 @@ $(window).on("scroll", (e) => {
       }
     }, 100);
   }
-});
-
-// ! recommended product on click
-$(".product__coursel__item").on("click", (e) => {
-  $(".product__coursel__item").removeClass("product__coursel__item--active");
-  e.currentTarget.classList.add("product__coursel__item--active");
 });
