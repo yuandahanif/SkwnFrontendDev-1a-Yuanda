@@ -3,6 +3,7 @@
 @import url("./styles/landing.css");
 @import url("./styles/about.css");
 @import url("./styles/partner.css");
+@import url("./styles/product.css");
 
 :root {
   --lime-primary: #e5f0b6;
