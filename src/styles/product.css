@@ -81,7 +81,7 @@
 
 .product__list {
   background: var(--dark-primary);
-  padding: 2em 1em;
+  padding: 2em 1em 4em;
 }
 
 .product__list__header {

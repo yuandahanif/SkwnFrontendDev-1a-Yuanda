@@ -5,10 +5,12 @@
 @import url("./styles/partner.css");
 @import url("./styles/product.css");
 @import url("./styles/contract.css");
+@import url("./styles/footer.css");
 
 :root {
   --lime-primary: #e5f0b6;
   --dark-primary: #2f241f;
+  --dark-light: #667085;
   --white-primary: #ffffff;
   --brown-primary: #817253;
 }
