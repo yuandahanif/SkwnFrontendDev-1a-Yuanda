@@ -5,7 +5,7 @@
   "homepage": "https://yuandahanif.github.io/SkwnFrontendDev-1a-Yuanda/",
   "scripts": {
     "watch": "tsc -w",
-    "serve": "parcel serve index.html --public-url .",
+    "serve": "parcel index.html",
     "dev": "concurrently  \"pnpm run serve\"",
     "build": "parcel build index.html --public-url /SkwnFrontendDev-1a-Yuanda/",
     "deploy": "gh-pages -d dist",
