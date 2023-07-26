@@ -67,7 +67,7 @@ const renderCourselFurnitureItem = async () => {
 
     const container = document.querySelector(".product__list__coursel");
     const data = await getFurnitures();
-    const furniture = data.slice(0, 9);
+    const furniture = data.slice(0, 8);
 
     furniture.forEach((item, idx) => {
       const html = template(

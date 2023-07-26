@@ -10,13 +10,13 @@ const scrollIfCourselOverflow = () => {
 
   if (activeCardLeft < 0) {
     const coursel = $(".product__list__coursel");
-    coursel.scrollLeft(activeCardLeft);
+    coursel.scrollLeft(activeCardRight);
     return;
   }
 
   if (activeCardRight > window.innerWidth) {
     const coursel = $(".product__list__coursel");
-    coursel.scrollLeft(activeCardRight);
+    coursel.scrollLeft(activeCardLeft);
     return;
   }
 };

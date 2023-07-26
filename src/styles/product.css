@@ -28,6 +28,11 @@
   width: 100%;
   object-fit: cover;
   height: 100%;
+  transition: 500ms;
+}
+
+.product__coursel__item:hover img {
+  scale: 1.1;
 }
 
 .product__coursel__item--active {
@@ -68,6 +73,10 @@
   text-align: left;
 }
 
+.product__detail__recommendation__item:hover {
+  cursor: pointer;
+}
+
 .product__detail__recommendation__item--active {
   background: var(--lime-primary);
   text-align: left;
@@ -80,11 +89,14 @@
 .product__detail__recommendation__item--active
   .product__detail__recommendation__item__desc {
   display: block;
+  scale: 1 1;
   margin-top: 1em;
 }
 
 .product__detail__recommendation__item__desc {
   display: none;
+  scale: 1 0;
+  transition: 500ms;
 }
 
 /* ============================ */
@@ -211,6 +223,11 @@
   padding: 1em;
   border-radius: 100%;
   cursor: pointer;
+  transition: 500ms;
+}
+
+.product__list__coursel__control button:hover {
+  scale: 1.1;
 }
 
 @media (min-width: 768px) {

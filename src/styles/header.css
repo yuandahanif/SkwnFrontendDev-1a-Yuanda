@@ -62,6 +62,7 @@ header nav ul a {
 
 .header__right button {
   padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
 .header__signup {

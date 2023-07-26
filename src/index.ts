@@ -8,36 +8,34 @@ import {
 $(window).on("load", (e) => {
   renderRecomendedFurnitureItem();
   renderCourselFurnitureItem();
-});
 
-// ! toggle mobile navigation menu
-$("#mobile_nav_button").on("click", (e) => {
-  $("#main_nav").toggleClass("nav-active");
-});
+  // ! toggle mobile navigation menu
+  $("#mobile_nav_button").on("click", (e) => {
+    $("#main_nav").toggleClass("nav-active");
+  });
 
-$("#main_nav > ul > li a").on("click", (e) => {
-  $("#main_nav").toggleClass("nav-active");
-});
+  $("#main_nav > ul > li a").on("click", (e) => {
+    $("#main_nav").toggleClass("nav-active");
+  });
 
-// ! on scroll
-let itter = 0;
-$(window).on("scroll", (e) => {
-  const scroll = $(window)?.scrollTop();
+  // ! on scroll
+  $(window).on("scroll", (e) => {
+    const scroll = $(window)?.scrollTop();
 
-  if (scroll && scroll > 100) {
-    $("header").addClass("shadow");
-  } else {
-    $("header").removeClass("shadow");
-  }
+    if (scroll && scroll > 10) {
+      $("header").addClass("shadow");
+    } else {
+      $("header").removeClass("shadow");
+    }
+  });
 
-  if (itter == 0 && scroll && scroll > 600) {
-    const intervalId = setInterval(() => {
-      itter++;
-      $("#partner_count").text(`${itter}+`);
+  // ! expand recommend section description
+  $(".product__detail__recommendation__item").on("click", (e) => {
+    e.stopPropagation();
+    $(".product__detail__recommendation__item--active").removeClass(
+      "product__detail__recommendation__item--active"
+    );
 
-      if (itter > 20) {
-        clearInterval(intervalId);
-      }
-    }, 100);
-  }
+    e.currentTarget.classList.toggle("product__detail__recommendation__item--active");
+  });
 });
