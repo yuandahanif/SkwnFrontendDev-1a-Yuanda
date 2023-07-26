@@ -2,11 +2,13 @@
   "name": "interview-1a",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "homepage": "https://yuandahanif.github.io/SkwnFrontendDev-1a-Yuanda/",
   "scripts": {
     "watch": "tsc -w",
-    "serve": "serve",
-    "dev": "concurrently \"pnpm run watch\" \"pnpm run serve\"",
+    "serve": "parcel serve index.html --public-url .",
+    "dev": "concurrently  \"pnpm run serve\"",
+    "build": "parcel build index.html --public-url /SkwnFrontendDev-1a-Yuanda/",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,11 +16,11 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.0",
-    "serve": "^14.2.0",
+    "gh-pages": "^5.0.0",
+    "parcel": "^2.9.3",
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@types/jquery": "^3.5.16",
-    "jquery": "^3.7.0"
+    "@types/jquery": "^3.5.16"
   }
 }
